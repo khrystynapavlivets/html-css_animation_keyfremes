@@ -1,0 +1,90 @@
+@import url(./image);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 820px;
+  background-image: url(./image/8b555e05-476ef5c932c550f515d5a77ffa424bca.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.earth {
+  width: 340px;
+  height: 345px;
+  background-image: url(./image/FaWKMJQnr2PFcYCmEyfiTm-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 380px;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: inset -1px -2px 6px 0px rgb(43, 43, 43);
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.radius {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 3px dashed rgb(172, 172, 172);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateZ(0deg) translate(-50px) rotateY(0deg) rotateX(70deg);
+}
+.moon {
+  width: 50px;
+  height: 50px;
+  background-image: url(image/Full-Hunters-Moon_Gizaw-Legesse_Addis-Ababa-Ethiopia_Oct-20-2021-e1634780880574-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgb(161, 161, 161);
+  box-shadow: inset -1px -10px 9px 2px rgb(43, 43, 43);
+  transform-style: preserve-3d;
+  animation: orbita 10s infinite linear;
+  transform: rotateZ(0deg) translate(225px) rotateY(90deg) rotateX(90deg);
+}
+
+@keyframes orbita {
+  0% {
+    transform: rotateZ(0deg) translate(225px) rotateY(90deg) rotateX(90deg);
+  }
+  25% {
+    box-shadow: inset -1px -1px 7px 2px rgb(43, 43, 43);
+  }
+  50% {
+    transform: rotateZ(180deg) translate(225px) rotateY(90deg) rotateX(280deg);
+    box-shadow: inset -1px 10px 9px 2px rgb(43, 43, 43);
+  }
+  75% {
+    box-shadow: inset -1px 15px 9px 2px rgb(43, 43, 43);
+  }
+  85% {
+    box-shadow: inset -1px -13px 9px 2px rgb(43, 43, 43);
+  }
+  100% {
+    transform: rotateZ(360deg) translate(225px) rotateY(90deg) rotateX(450deg);
+    box-shadow: inset -1px -10px 9px 2px rgb(43, 43, 43);
+  }
+}
